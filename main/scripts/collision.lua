@@ -12,14 +12,17 @@ function collision.init()
 	collision.ground_id = aabb.insert(collision_group_id, 0, -144, utils.zoom.w, 32)
 end
 
+local function add_gameobject(url, width, height)
+	local msg_url = msg.url(url)
+	return aabb.insert_gameobject(collision_group_id, msg_url, width, height)
+end
+
 function collision.add_bird(url, width, height)
-	local msg_url     = msg.url(url)
-	collision.bird_id = aabb.insert_gameobject(collision_group_id, msg_url, width, height)
+	collision.bird_id = add_gameobject(url, width, height)
 end
 
 function collision.add_pipe(url, width, height)
-	local msg_url = msg.url(url)
-	local pipe_id = aabb.insert_gameobject(collision_group_id, msg_url, width, height)
+	add_gameobject(url, width, height)
 end
 
 function collision.check()
