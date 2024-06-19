@@ -1,0 +1,397 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"im",
+				"img-fluid"
+			],
+			[
+				"b",
+				"best"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"best",
+				"best"
+			],
+			[
+				"bes",
+				"bestDist"
+			],
+			[
+				"dis",
+				"distToClosestSqr"
+			],
+			[
+				"dist",
+				"distToClosestSqr"
+			],
+			[
+				"num",
+				"numValues"
+			],
+			[
+				"pla",
+				"playRadius"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ti",
+				"Convert Case: Title Case"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"tr",
+				"Trim Trailing White Space"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade All Packages"
+			],
+			[
+				"case",
+				"Convert Case: Title Case"
+			],
+			[
+				"tra",
+				"Trim Trailing White Space"
+			],
+			[
+				"pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pac",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"t",
+				"Convert Case: Title Case"
+			],
+			[
+				"Title",
+				"Convert Case: Title Case"
+			],
+			[
+				"Title ",
+				"Convert Case: Title Case"
+			],
+			[
+				"",
+				"Bookmarks: Select Next"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 393.0,
+		"history":
+		[
+			"cd ..",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/selimanac/Development/defold/flappybird"
+	],
+	"file_history":
+	[
+		"/Users/selimanac/Documents/tarif.txt",
+		"/Users/selimanac/Documents/HEMEN AL.txt",
+		"/Users/selimanac/Documents/TUR LİSTESİ.txt",
+		"/Users/selimanac/Documents/Finansbank.txt",
+		"/Users/selimanac/Documents/connectvpn.vodafone.txt",
+		"/Users/selimanac/Development/defold/Side scroller tutorial/main/main.script",
+		"/Volumes/Work/Downloads/defold-examples-master/alien-world/main/main.script",
+		"/Volumes/Work/Downloads/defold-examples-master/alien-world/player/camera.script",
+		"/Users/selimanac/Development/defold/bsp/test1/Desktop game/main/main.script",
+		"/Users/selimanac/Development/defold/LookAtMouse/main/tiled_import.lua",
+		"/Users/selimanac/Development/defold/LookAtMouse/main/rendercam-main.script",
+		"/Volumes/Work/Downloads/defold-orbit-camera-main/orbit-cam/orbit.script",
+		"/Volumes/Work/Downloads/defold-orbit-camera-main/main/main.script",
+		"/Applications/MAMP/bin/php/php8.2.0/conf/php.ini",
+		"/Applications/MAMP/conf/php8.2.0/php.ini",
+		"/Users/selimanac/Development/www/tokyo-booking/colorsalone-cron-dns.txt",
+		"/Users/selimanac/Library/Application Support/Sublime Merge/Packages/User/Preferences.sublime-settings",
+		"/Users/selimanac/Development/www/van-eck-trailers/van-eck-website/.htaccess",
+		"/Users/selimanac/Development/www/van-eck-trailers/backup/.htaccess",
+		"/Users/selimanac/Documents/ixir-host/tokyo-ixir-host.md",
+		"/etc/hosts",
+		"/Volumes/Work/Design/tvv/mailling/dogum-gunu/yavuz_canevi.html",
+		"/Users/selimanac/SDK/defold-localextender/start-stop.txt",
+		"/Users/selimanac/Desktop/connectvpn.vodafone.txt",
+		"/Users/selimanac/Documents/mastodon.txt",
+		"/Users/selimanac/Documents/GOG.md",
+		"/Users/selimanac/Development/www/GoG/gog_web/public/.htaccess",
+		"/Users/selimanac/Development/www/GoG/gog_web/sass/package.json",
+		"/Users/selimanac/Development/www/GoG/gog_web/public/goblet_cms/robot.txt",
+		"/Users/selimanac/SDK/defold-localextender/stop.sh",
+		"/Users/selimanac/Documents/yaratim-com.txt",
+		"/Users/selimanac/Desktop/vaneck-form-submit.txt",
+		"/Users/selimanac/Documents/Tokyo-Fatura.txt",
+		"/Users/selimanac/Desktop/dollar",
+		"/Users/selimanac/Development/www/van-eck-trailers/van-eck-website/wp-content/plugins/vaneck-contact-form/views/tco-calculator-message-sent.view.php",
+		"/Users/selimanac/Development/www/test/test.php",
+		"/Users/selimanac/Development/www/van-eck-trailers/van-eck-website/wp-content/themes/vaneck/layouts-tco.php",
+		"/Users/selimanac/Development/www/van-eck-trailers/van-eck-website/wp-content/themes/vaneck/layouts-tco-result-form.php",
+		"/Users/selimanac/Development/www/van-eck-trailers/van-eck-website/wp-content/plugins/vaneck-contact-form/views/tco-calculator-form.view.php",
+		"/Users/selimanac/Development/www/van-eck-trailers/van-eck-website/wp-content/plugins/vaneck-contact-form/views/tco-calculator-message-not-sent.view.php",
+		"/Users/selimanac/Documents/ebay.txt",
+		"/Users/selimanac/Development/Tokyo/ixir-host/tokyo-ixir-host.txt",
+		"/Users/selimanac/Desktop/Hugo dev",
+		"/Users/selimanac/Downloads/comment-form-csrf-protection/comment-form-csrf-protection.php",
+		"/Users/selimanac/Development/Defold/Native Extension/defold-vsc-snippets/defold-vsc-snippets-git/defold-vsc-snippets/docs.txt",
+		"/Users/selimanac/Development/www/cys.zone/wp-content/themes/neighborhood/functions.php",
+		"/Users/selimanac/SDK/win10-key.txt",
+		"/Users/selimanac/Downloads/pt-15.1.2.47123-linux-5.6.txt",
+		"/Users/selimanac/Development/Behavior3/behavior3-defold/main/test_project.json",
+		"/Users/selimanac/Documents/pinarogunc.txt",
+		"/Applications/Games/Darkest Dungeon.app/Contents/Resources/Data/fx/attack_overlay/attack_overlay.sprite.atlas",
+		"/Users/selimanac/Development/Behavior3/behavior3-defold/build/default/behavior3/b3.luac",
+		"/Volumes/Backup/Backups/17012021/Development/C++/BTDesigner/Makefile",
+		"/Users/selimanac/Downloads/raycaster_flat.cpp",
+		"/Users/selimanac/Development/www/social-widget/backend/cache/instagram.050a5244bbd1b217c0960f0c9ded333e.json",
+		"/Users/selimanac/Development/Defold/sandbox/defold-pixel-planets/render/pixelplanet.render_script",
+		"/Users/selimanac/Downloads/LightFS.txt",
+		"/Users/selimanac/Development/www/TOKYO/Vodafone/tvv/wp-content/themes/vtv/shortcodes/custom-shortcodes.php",
+		"/Users/selimanac/DefaultKeyBinding.Dict",
+		"/Users/selimanac/Downloads/PixelPlanets-main/Planets/NoAtmosphere/NoAtmosphere.tscn",
+		"/Users/selimanac/Downloads/PixelPlanets-main/Planets/NoAtmosphere/NoAtmosphere.shader",
+		"/Applications/MAMP/conf/nginx/nginx.conf",
+		"/Volumes/Adobe Photoshop 2021 v22.2/Extra/Neural Filters v22.2/How to install.txt",
+		"/Users/selimanac/SDK/aseprite/build/bin/aseprite",
+		"/Users/selimanac/SDK/aseprite-build.txt",
+		"/Volumes/GoogleDrive/My Drive/Vodafone/tvv/updates/outbound/functions.php",
+		"/Users/selimanac/Desktop/tvv-link.txt",
+		"/Users/selimanac/Development/www/selimanac.github.io/run.sh ",
+		"/Volumes/GoogleDrive/My Drive/Vodafone/tvv/updates/outbound/wp-config.php",
+		"/Applications/MAMP/conf/apache/httpd.conf",
+		"/Users/selimanac/Design/Tokyo/tirsan/vaneck/Eckspert_New_Design_02_FinalWork_Folder/Eckspert_New_Design_02_FinalWork Report.txt",
+		"/Users/selimanac/Documents/StandartFMVPS.txt",
+		"/Users/Shared/Relocated Items/Configuration/private/etc/paths.system_default",
+		"/Users/selimanac/Development/www/TOKYO/Vodafone/vfmm/Input.php",
+		"/Users/selimanac/Development/www/TOKYO/Vodafone/vfmm/app/vendor/codeigniter/framework/system/core/Input.php",
+		"/Users/selimanac/Development/www/van-eck-trailers/van-eck-frontend/pages/Ecko Co2mbi Series.html",
+		"/Users/selimanac/Documents/godaddy.txt"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 162.0
+	},
+	"output.exec":
+	{
+		"height": 162.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "flappy.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
