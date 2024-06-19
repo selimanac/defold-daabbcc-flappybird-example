@@ -23,3 +23,6 @@ dependencies#2 = https://github.com/selimanac/defold-random/archive/refs/heads/m
 default_texture_min_filter = nearest
 default_texture_mag_filter = nearest
 
+[native_extension]
+app_manifest = /flappy.appmanifest
+

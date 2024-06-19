@@ -8,5 +8,5 @@ Thumbs.db
 .project
 .cproject
 builtins
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
