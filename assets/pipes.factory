@@ -1,0 +1,3 @@
+prototype: "/assets/pipe.go"
+load_dynamically: false
+dynamic_prototype: false
