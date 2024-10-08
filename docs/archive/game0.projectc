@@ -50,7 +50,7 @@ max_fixed_timesteps = 2
 
 [bootstrap]
 main_collection = /main/main.collectionc
-render = /orthographic/render/orthographic.renderc
+render = /builtins/render/default.renderc
 
 [graphics]
 default_texture_min_filter = nearest
@@ -205,6 +205,7 @@ max_tile_count = 2048
 [engine]
 run_while_iconified = 0
 fixed_update_frequency = 60
+max_time_step = 0.5
 
 [native_extension]
 app_manifest = /flappy.appmanifest

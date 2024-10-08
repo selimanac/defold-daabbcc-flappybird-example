@@ -3,7 +3,7 @@
 Flappy Bird example using [DAABBCC](https://github.com/selimanac/defold-daabbcc).   
 
 
-Play it here: https://selimanac.github.io/DAABBCC-Flappybird-Example/
+Play it here: https://selimanac.github.io/defold-daabbcc-flappybird-example/
 
 ![DAABBCC Flappy Bird](/.github/flappy.png?raw=true) 
 
