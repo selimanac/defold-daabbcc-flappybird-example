@@ -1,6 +1,6 @@
 [bootstrap]
 main_collection = /main/main.collectionc
-render = /orthographic/render/orthographic.renderc
+render = /builtins/render/default.renderc
 
 [script]
 shared_state = 1
@@ -15,9 +15,8 @@ input_method = HiddenInputField
 
 [project]
 title = flappybird
-dependencies#0 = https://github.com/britzl/defold-orthographic/archive/refs/heads/master.zip
-dependencies#1 = https://github.com/selimanac/DAABBCC/archive/refs/heads/v2.1.zip
-dependencies#2 = https://github.com/selimanac/defold-random/archive/refs/heads/master.zip
+dependencies#0 = https://github.com/selimanac/defold-random/archive/refs/heads/master.zip
+dependencies#1 = https://github.com/selimanac/defold-daabbcc/archive/refs/heads/v3.x.zip
 
 [graphics]
 default_texture_min_filter = nearest

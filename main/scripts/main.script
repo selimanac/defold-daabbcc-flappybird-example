@@ -3,6 +3,7 @@ local manager = require('main.scripts.manager')
 function init(self)
 	msg.post("@render:", "clear_color", { color = vmath.vector4(12 / 255, 241 / 255, 1, 0) })
 	msg.post(".", "acquire_input_focus")
+	msg.post("@render:", "use_camera_projection")
 
 	manager.init()
 end

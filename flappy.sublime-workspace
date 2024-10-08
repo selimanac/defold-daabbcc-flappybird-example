@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"col",
+				"collision_group_id"
+			],
+			[
 				"main",
 				"main.scripts.utils"
 			],
@@ -75,15 +79,195 @@
 			"file": "main/scripts/main.script",
 			"settings":
 			{
-				"buffer_size": 474,
+				"buffer_size": 521,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n--"
+					},
+					"BAAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAADHAAAAAAAAAAAAAADHAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAyQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"paste",
+					null,
+					"AQAAAMkAAAAAAAAA9gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyQAAAAAAAADJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local manager = require('main.scripts.manager')\n\nfunction init(self)\n\tmsg.post(\"@render:\", \"clear_color\", { color = vmath.vector4(12 / 255, 241 / 255, 1, 0) })\n\tmsg.post(\".\", \"acquire_input_focus\")\n\t--msg.post(\"@render:\", \"use_camera_projection\")\n\n\tmanager.init()\nend\n\nfunction update(self, dt)\n\tmanager.update(dt)\nend\n\nfunction on_message(self, message_id, message, sender)\n\tif message_id == hash('reboot') then\n\t\tmanager.reboot()\n\tend\nend\n\nfunction on_input(self, action_id, action)\n\tmanager.input(action_id, action)\nend\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 23
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAACwIAAAAAAAALAgAAbG9jYWwgbWFuYWdlciA9IHJlcXVpcmUoJ21haW4uc2NyaXB0cy5tYW5hZ2VyJykKCmZ1bmN0aW9uIGluaXQoc2VsZikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJjbGVhcl9jb2xvciIsIHsgY29sb3IgPSB2bWF0aC52ZWN0b3I0KDEyIC8gMjU1LCAyNDEgLyAyNTUsIDEsIDApIH0pCgltc2cucG9zdCgiLiIsICJhY3F1aXJlX2lucHV0X2ZvY3VzIikKCS0tbXNnLnBvc3QoIkByZW5kZXI6IiwgInVzZV9jYW1lcmFfcHJvamVjdGlvbiIpCgoJbWFuYWdlci5pbml0KCkKZW5kCgpmdW5jdGlvbiB1cGRhdGUoc2VsZiwgZHQpCgltYW5hZ2VyLnVwZGF0ZShkdCkKZW5kCgpmdW5jdGlvbiBvbl9tZXNzYWdlKHNlbGYsIG1lc3NhZ2VfaWQsIG1lc3NhZ2UsIHNlbmRlcikKCWlmIG1lc3NhZ2VfaWQgPT0gaGFzaCgncmVib290JykgdGhlbgoJCW1hbmFnZXIucmVib290KCkKCWVuZAplbmQKCmZ1bmN0aW9uIG9uX2lucHV0KHNlbGYsIGFjdGlvbl9pZCwgYWN0aW9uKQoJbWFuYWdlci5pbnB1dChhY3Rpb25faWQsIGFjdGlvbikKZW5kCg",
+					"AQAAAAAAAAABAAAA9gAAAAAAAAD2AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"cut",
+					null,
+					"AQAAAMcAAAAAAAAAxwAAAAAAAAACAAAALS0",
+					"AQAAAAAAAAABAAAAyQAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local manager = require('main.scripts.manager')\n\nfunction init(self)\n\tmsg.post(\"@render:\", \"clear_color\", { color = vmath.vector4(12 / 255, 241 / 255, 1, 0) })\n\tmsg.post(\".\", \"acquire_input_focus\")\n\tmsg.post(\"@render:\", \"use_camera_projection\")\n\n\tmanager.init()\nend\n\nfunction update(self, dt)\n\tmanager.update(dt)\nend\n\nfunction on_message(self, message_id, message, sender)\n\tif message_id == hash('reboot') then\n\t\tmanager.reboot()\n\tend\nend\n\nfunction on_input(self, action_id, action)\n\tmanager.input(action_id, action)\nend\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 23
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAACQIAAAAAAAAJAgAAbG9jYWwgbWFuYWdlciA9IHJlcXVpcmUoJ21haW4uc2NyaXB0cy5tYW5hZ2VyJykKCmZ1bmN0aW9uIGluaXQoc2VsZikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJjbGVhcl9jb2xvciIsIHsgY29sb3IgPSB2bWF0aC52ZWN0b3I0KDEyIC8gMjU1LCAyNDEgLyAyNTUsIDEsIDApIH0pCgltc2cucG9zdCgiLiIsICJhY3F1aXJlX2lucHV0X2ZvY3VzIikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJ1c2VfY2FtZXJhX3Byb2plY3Rpb24iKQoKCW1hbmFnZXIuaW5pdCgpCmVuZAoKZnVuY3Rpb24gdXBkYXRlKHNlbGYsIGR0KQoJbWFuYWdlci51cGRhdGUoZHQpCmVuZAoKZnVuY3Rpb24gb25fbWVzc2FnZShzZWxmLCBtZXNzYWdlX2lkLCBtZXNzYWdlLCBzZW5kZXIpCglpZiBtZXNzYWdlX2lkID09IGhhc2goJ3JlYm9vdCcpIHRoZW4KCQltYW5hZ2VyLnJlYm9vdCgpCgllbmQKZW5kCgpmdW5jdGlvbiBvbl9pbnB1dChzZWxmLCBhY3Rpb25faWQsIGFjdGlvbikKCW1hbmFnZXIuaW5wdXQoYWN0aW9uX2lkLCBhY3Rpb24pCmVuZAo",
+					"AQAAAAAAAAABAAAAxwAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local manager = require('main.scripts.manager')\n\nfunction init(self)\n\tmsg.post(\"@render:\", \"clear_color\", { color = vmath.vector4(12 / 255, 241 / 255, 1, 0) })\n\tmsg.post(\".\", \"acquire_input_focus\")\n\tmsg.post(\"@render:\", \"use_camera_projection\")\n\n\tmanager.init()\nend\n\nfunction update(self, dt)\n\tmanager.update(dt)\nend\n\nfunction on_message(self, message_id, message, sender)\n\tif message_id == hash('reboot') then\n\t\tmanager.reboot()\n\tend\nend\n\nfunction on_input(self, action_id, action)\n\tmanager.input(action_id, action)\nend\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 23
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAACQIAAAAAAAAJAgAAbG9jYWwgbWFuYWdlciA9IHJlcXVpcmUoJ21haW4uc2NyaXB0cy5tYW5hZ2VyJykKCmZ1bmN0aW9uIGluaXQoc2VsZikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJjbGVhcl9jb2xvciIsIHsgY29sb3IgPSB2bWF0aC52ZWN0b3I0KDEyIC8gMjU1LCAyNDEgLyAyNTUsIDEsIDApIH0pCgltc2cucG9zdCgiLiIsICJhY3F1aXJlX2lucHV0X2ZvY3VzIikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJ1c2VfY2FtZXJhX3Byb2plY3Rpb24iKQoKCW1hbmFnZXIuaW5pdCgpCmVuZAoKZnVuY3Rpb24gdXBkYXRlKHNlbGYsIGR0KQoJbWFuYWdlci51cGRhdGUoZHQpCmVuZAoKZnVuY3Rpb24gb25fbWVzc2FnZShzZWxmLCBtZXNzYWdlX2lkLCBtZXNzYWdlLCBzZW5kZXIpCglpZiBtZXNzYWdlX2lkID09IGhhc2goJ3JlYm9vdCcpIHRoZW4KCQltYW5hZ2VyLnJlYm9vdCgpCgllbmQKZW5kCgpmdW5jdGlvbiBvbl9pbnB1dChzZWxmLCBhY3Rpb25faWQsIGFjdGlvbikKCW1hbmFnZXIuaW5wdXQoYWN0aW9uX2lkLCBhY3Rpb24pCmVuZAo",
+					"AQAAAAAAAAABAAAA9AAAAAAAAAD0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local manager = require('main.scripts.manager')\n\nfunction init(self)\n\tmsg.post(\"@render:\", \"clear_color\", { color = vmath.vector4(12 / 255, 241 / 255, 1, 0) })\n\tmsg.post(\".\", \"acquire_input_focus\")\n\tmsg.post(\"@render:\", \"use_camera_projection\")\n\n\tmanager.init()\nend\n\nfunction update(self, dt)\n\tmanager.update(dt)\nend\n\nfunction on_message(self, message_id, message, sender)\n\tif message_id == hash('reboot') then\n\t\tmanager.reboot()\n\tend\nend\n\nfunction on_input(self, action_id, action)\n\tmanager.input(action_id, action)\nend\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 23
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAACQIAAAAAAAAJAgAAbG9jYWwgbWFuYWdlciA9IHJlcXVpcmUoJ21haW4uc2NyaXB0cy5tYW5hZ2VyJykKCmZ1bmN0aW9uIGluaXQoc2VsZikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJjbGVhcl9jb2xvciIsIHsgY29sb3IgPSB2bWF0aC52ZWN0b3I0KDEyIC8gMjU1LCAyNDEgLyAyNTUsIDEsIDApIH0pCgltc2cucG9zdCgiLiIsICJhY3F1aXJlX2lucHV0X2ZvY3VzIikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJ1c2VfY2FtZXJhX3Byb2plY3Rpb24iKQoKCW1hbmFnZXIuaW5pdCgpCmVuZAoKZnVuY3Rpb24gdXBkYXRlKHNlbGYsIGR0KQoJbWFuYWdlci51cGRhdGUoZHQpCmVuZAoKZnVuY3Rpb24gb25fbWVzc2FnZShzZWxmLCBtZXNzYWdlX2lkLCBtZXNzYWdlLCBzZW5kZXIpCglpZiBtZXNzYWdlX2lkID09IGhhc2goJ3JlYm9vdCcpIHRoZW4KCQltYW5hZ2VyLnJlYm9vdCgpCgllbmQKZW5kCgpmdW5jdGlvbiBvbl9pbnB1dChzZWxmLCBhY3Rpb25faWQsIGFjdGlvbikKCW1hbmFnZXIuaW5wdXQoYWN0aW9uX2lkLCBhY3Rpb24pCmVuZAo",
+					"AQAAAAAAAAABAAAA9AAAAAAAAAD0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local manager = require('main.scripts.manager')\n\nfunction init(self)\n\tmsg.post(\"@render:\", \"clear_color\", { color = vmath.vector4(12 / 255, 241 / 255, 1, 0) })\n\tmsg.post(\".\", \"acquire_input_focus\")\n\tmsg.post(\"@render:\", \"use_camera_projection\")\n\n\tmanager.init()\nend\n\nfunction update(self, dt)\n\tmanager.update(dt)\nend\n\nfunction on_message(self, message_id, message, sender)\n\tif message_id == hash('reboot') then\n\t\tmanager.reboot()\n\tend\nend\n\nfunction on_input(self, action_id, action)\n\tmanager.input(action_id, action)\nend\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 23
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAACQIAAAAAAAAJAgAAbG9jYWwgbWFuYWdlciA9IHJlcXVpcmUoJ21haW4uc2NyaXB0cy5tYW5hZ2VyJykKCmZ1bmN0aW9uIGluaXQoc2VsZikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJjbGVhcl9jb2xvciIsIHsgY29sb3IgPSB2bWF0aC52ZWN0b3I0KDEyIC8gMjU1LCAyNDEgLyAyNTUsIDEsIDApIH0pCgltc2cucG9zdCgiLiIsICJhY3F1aXJlX2lucHV0X2ZvY3VzIikKCW1zZy5wb3N0KCJAcmVuZGVyOiIsICJ1c2VfY2FtZXJhX3Byb2plY3Rpb24iKQoKCW1hbmFnZXIuaW5pdCgpCmVuZAoKZnVuY3Rpb24gdXBkYXRlKHNlbGYsIGR0KQoJbWFuYWdlci51cGRhdGUoZHQpCmVuZAoKZnVuY3Rpb24gb25fbWVzc2FnZShzZWxmLCBtZXNzYWdlX2lkLCBtZXNzYWdlLCBzZW5kZXIpCglpZiBtZXNzYWdlX2lkID09IGhhc2goJ3JlYm9vdCcpIHRoZW4KCQltYW5hZ2VyLnJlYm9vdCgpCgllbmQKZW5kCgpmdW5jdGlvbiBvbl9pbnB1dChzZWxmLCBhY3Rpb25faWQsIGFjdGlvbikKCW1hbmFnZXIuaW5wdXQoYWN0aW9uX2lkLCBhY3Rpb24pCmVuZAo",
+					"AQAAAAAAAAABAAAARgAAAAAAAACfAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
 		},
 		{
 			"file": "main/scripts/collision.lua",
 			"settings":
 			{
-				"buffer_size": 989,
+				"buffer_size": 1044,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
@@ -97,7 +281,7 @@
 						"characters": "\n\nfun"
 					},
 					"BQAAADkBAAAAAAAAOgEAAAAAAAAAAAAAOgEAAAAAAAA7AQAAAAAAAAAAAAA7AQAAAAAAADwBAAAAAAAAAAAAADwBAAAAAAAAPQEAAAAAAAAAAAAAPQEAAAAAAAA+AQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA5AQAAAAAAADkBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAOQEAAAAAAAA5AQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					8,
@@ -105,7 +289,7 @@
 					"left_delete",
 					null,
 					"AwAAAD0BAAAAAAAAPQEAAAAAAAABAAAAbjwBAAAAAAAAPAEAAAAAAAABAAAAdTsBAAAAAAAAOwEAAAAAAAABAAAAZg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA+AQAAAAAAAD4BAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPgEAAAAAAAA+AQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					9,
@@ -115,7 +299,7 @@
 						"characters": "local"
 					},
 					"BQAAADsBAAAAAAAAPAEAAAAAAAAAAAAAPAEAAAAAAAA9AQAAAAAAAAAAAAA9AQAAAAAAAD4BAAAAAAAAAAAAAD4BAAAAAAAAPwEAAAAAAAAAAAAAPwEAAAAAAABAAQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA7AQAAAAAAADsBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAOwEAAAAAAAA7AQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					10,
@@ -125,7 +309,7 @@
 						"characters": " fun"
 					},
 					"BAAAAEABAAAAAAAAQQEAAAAAAAAAAAAAQQEAAAAAAABCAQAAAAAAAAAAAABCAQAAAAAAAEMBAAAAAAAAAAAAAEMBAAAAAAAARAEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABAAQAAAAAAAEABAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAQAEAAAAAAABAAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					11,
@@ -139,7 +323,7 @@
 						"trigger": "function ()"
 					},
 					"AgAAAEEBAAAAAAAAQQEAAAAAAAADAAAAZnVuQQEAAAAAAABSAQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABEAQAAAAAAAEQBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAARAEAAAAAAABEAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					12,
@@ -149,7 +333,7 @@
 						"characters": "add_gam"
 					},
 					"BwAAAEoBAAAAAAAASwEAAAAAAAAAAAAASwEAAAAAAABMAQAAAAAAAAAAAABMAQAAAAAAAE0BAAAAAAAAAAAAAE0BAAAAAAAATgEAAAAAAAAAAAAATgEAAAAAAABPAQAAAAAAAAAAAABPAQAAAAAAAFABAAAAAAAAAAAAAFABAAAAAAAAUQEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABKAQAAAAAAAEoBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAASgEAAAAAAABKAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					13,
@@ -159,7 +343,7 @@
 						"characters": "eobject"
 					},
 					"BwAAAFEBAAAAAAAAUgEAAAAAAAAAAAAAUgEAAAAAAABTAQAAAAAAAAAAAABTAQAAAAAAAFQBAAAAAAAAAAAAAFQBAAAAAAAAVQEAAAAAAAAAAAAAVQEAAAAAAABWAQAAAAAAAAAAAABWAQAAAAAAAFcBAAAAAAAAAAAAAFcBAAAAAAAAWAEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABRAQAAAAAAAFEBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAUQEAAAAAAABRAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					25,
@@ -167,7 +351,7 @@
 					"paste",
 					null,
 					"AQAAAFkBAAAAAAAAawEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABZAQAAAAAAAFkBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAWQEAAAAAAABZAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					38,
@@ -175,7 +359,7 @@
 					"paste",
 					null,
 					"AQAAAG4BAAAAAAAAjgEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABuAQAAAAAAAG4BAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAbgEAAAAAAABuAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					39,
@@ -185,7 +369,7 @@
 						"characters": "\nreturn"
 					},
 					"CAAAAI4BAAAAAAAAjwEAAAAAAAAAAAAAjwEAAAAAAACQAQAAAAAAAAAAAACQAQAAAAAAAJEBAAAAAAAAAAAAAJEBAAAAAAAAkgEAAAAAAAAAAAAAkgEAAAAAAACTAQAAAAAAAAAAAACTAQAAAAAAAJQBAAAAAAAAAAAAAJQBAAAAAAAAlQEAAAAAAAAAAAAAlQEAAAAAAACWAQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACOAQAAAAAAAI4BAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAjgEAAAAAAACOAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					40,
@@ -199,7 +383,7 @@
 						"trigger": "return"
 					},
 					"AgAAAJABAAAAAAAAkAEAAAAAAAAGAAAAcmV0dXJukAEAAAAAAACWAQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACWAQAAAAAAAJYBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAlgEAAAAAAACWAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					41,
@@ -209,7 +393,7 @@
 						"characters": " "
 					},
 					"AQAAAJYBAAAAAAAAlwEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACWAQAAAAAAAJYBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAlgEAAAAAAACWAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					49,
@@ -219,7 +403,7 @@
 						"characters": " "
 					},
 					"AQAAAJcBAAAAAAAAmAEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACXAQAAAAAAAJcBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAlwEAAAAAAACXAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					50,
@@ -227,7 +411,7 @@
 					"paste",
 					null,
 					"AQAAAJgBAAAAAAAA2gEAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACYAQAAAAAAAJgBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAmAEAAAAAAACYAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					54,
@@ -257,7 +441,7 @@
 						"required_view_version": null
 					},
 					"AQAAAAAAAAAAAAAAbQQAAAAAAAByBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglhYWJiLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGFhYmIubmV3X2dyb3VwKCkKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSBhYWJiLmluc2VydChjb2xsaXNpb25fZ3JvdXBfaWQsIDAsIC0xNDQsIHV0aWxzLnpvb20udywgMzIpCmVuZAoKbG9jYWwgZnVuY3Rpb24gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQoJbG9jYWwgbXNnX3VybCAgICAgPSBtc2cudXJsKHVybCkKCXJldHVybiAgYWFiYi5pbnNlcnRfZ2FtZW9iamVjdChjb2xsaXNpb25fZ3JvdXBfaWQsIG1zZ191cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmFkZF9iaXJkKHVybCwgd2lkdGgsIGhlaWdodCkKCWxvY2FsIG1zZ191cmwgICAgID0gbXNnLnVybCh1cmwpCgljb2xsaXNpb24uYmlyZF9pZCA9IGFhYmIuaW5zZXJ0X2dhbWVvYmplY3QoY29sbGlzaW9uX2dyb3VwX2lkLCBtc2dfdXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfcGlwZSh1cmwsIHdpZHRoLCBoZWlnaHQpCglsb2NhbCBtc2dfdXJsID0gbXNnLnVybCh1cmwpCglsb2NhbCBwaXBlX2lkID0gYWFiYi5pbnNlcnRfZ2FtZW9iamVjdChjb2xsaXNpb25fZ3JvdXBfaWQsIG1zZ191cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmNoZWNrKCkKCWxvY2FsIHJlc3VsdCwgY291bnQgPSBhYWJiLnF1ZXJ5X2lkKGNvbGxpc2lvbl9ncm91cF9pZCwgY29sbGlzaW9uLmJpcmRfaWQpCglyZXR1cm4gcmVzdWx0LCBjb3VudAplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5zdG9wKCkKCWFhYmIucnVuKGZhbHNlKQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5yZXNldCgpCglhYWJiLmNsZWFyKCkKCWNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCgljb2xsaXNpb24uYmlyZF9pZCA9IC0xCgljb2xsaXNpb24uZ3JvdW5kX2lkID0gLTEKZW5kCgpyZXR1cm4gY29sbGlzaW9uCg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABsAQAAAAAAAGwBAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAbAEAAAAAAABsAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					59,
@@ -265,7 +449,7 @@
 					"left_delete",
 					null,
 					"AQAAAAwCAAAAAAAADAIAAAAAAAAgAAAAbG9jYWwgbXNnX3VybCAgICAgPSBtc2cudXJsKHVybCk",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAMAgAAAAAAACwCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAADAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					62,
@@ -273,7 +457,7 @@
 					"paste",
 					null,
 					"AgAAACICAAAAAAAARwIAAAAAAAAAAAAARwIAAAAAAABHAgAAAAAAAEIAAABhYWJiLmluc2VydF9nYW1lb2JqZWN0KGNvbGxpc2lvbl9ncm91cF9pZCwgbXNnX3VybCwgd2lkdGgsIGhlaWdodCk",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiAgAAAAAAAGQCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIgIAAAAAAABkAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					72,
@@ -281,7 +465,7 @@
 					"paste",
 					null,
 					"AgAAADECAAAAAAAANAIAAAAAAAAAAAAANAIAAAAAAAA0AgAAAAAAAAYAAABnb191cmw",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxAgAAAAAAADcCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAMQIAAAAAAAA3AgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					80,
@@ -289,7 +473,7 @@
 					"paste",
 					null,
 					"AgAAAKgCAAAAAAAAygIAAAAAAAAAAAAAygIAAAAAAADKAgAAAAAAAEMAAAAgYWFiYi5pbnNlcnRfZ2FtZW9iamVjdChjb2xsaXNpb25fZ3JvdXBfaWQsIG1zZ191cmwsIHdpZHRoLCBoZWlnaHQp",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACoAgAAAAAAAOsCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAqAIAAAAAAADrAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					84,
@@ -319,7 +503,7 @@
 						"required_view_version": null
 					},
 					"AQAAAAAAAAAAAAAACwQAAAAAAAAMBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglhYWJiLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGFhYmIubmV3X2dyb3VwKCkKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSBhYWJiLmluc2VydChjb2xsaXNpb25fZ3JvdXBfaWQsIDAsIC0xNDQsIHV0aWxzLnpvb20udywgMzIpCmVuZAoKbG9jYWwgZnVuY3Rpb24gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQoJbG9jYWwgbXNnX3VybCA9IG1zZy51cmwodXJsKQoJcmV0dXJuIGFhYmIuaW5zZXJ0X2dhbWVvYmplY3QoY29sbGlzaW9uX2dyb3VwX2lkLCBtc2dfdXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfYmlyZCh1cmwsIHdpZHRoLCBoZWlnaHQpCgkKCWNvbGxpc2lvbi5iaXJkX2lkID0gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfcGlwZSh1cmwsIHdpZHRoLCBoZWlnaHQpCglsb2NhbCBtc2dfdXJsID0gbXNnLnVybCh1cmwpCglsb2NhbCBwaXBlX2lkID1hZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmNoZWNrKCkKCWxvY2FsIHJlc3VsdCwgY291bnQgPSBhYWJiLnF1ZXJ5X2lkKGNvbGxpc2lvbl9ncm91cF9pZCwgY29sbGlzaW9uLmJpcmRfaWQpCglyZXR1cm4gcmVzdWx0LCBjb3VudAplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5zdG9wKCkKCWFhYmIucnVuKGZhbHNlKQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5yZXNldCgpCglhYWJiLmNsZWFyKCkKCWNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCgljb2xsaXNpb24uYmlyZF9pZCA9IC0xCgljb2xsaXNpb24uZ3JvdW5kX2lkID0gLTEKZW5kCgpyZXR1cm4gY29sbGlzaW9uCg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABJAgAAAAAAAEkCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAASQIAAAAAAABJAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					98,
@@ -327,7 +511,7 @@
 					"cut",
 					null,
 					"AQAAAHkCAAAAAAAAeQIAAAAAAAAcAAAAbG9jYWwgbXNnX3VybCA9IG1zZy51cmwodXJsKQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5AgAAAAAAAJUCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAeQIAAAAAAACVAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					100,
@@ -357,7 +541,7 @@
 						"required_view_version": null
 					},
 					"AQAAAAAAAAAAAAAA7QMAAAAAAADvAwAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglhYWJiLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGFhYmIubmV3X2dyb3VwKCkKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSBhYWJiLmluc2VydChjb2xsaXNpb25fZ3JvdXBfaWQsIDAsIC0xNDQsIHV0aWxzLnpvb20udywgMzIpCmVuZAoKbG9jYWwgZnVuY3Rpb24gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQoJbG9jYWwgbXNnX3VybCA9IG1zZy51cmwodXJsKQoJcmV0dXJuIGFhYmIuaW5zZXJ0X2dhbWVvYmplY3QoY29sbGlzaW9uX2dyb3VwX2lkLCBtc2dfdXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfYmlyZCh1cmwsIHdpZHRoLCBoZWlnaHQpCgljb2xsaXNpb24uYmlyZF9pZCA9IGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX3BpcGUodXJsLCB3aWR0aCwgaGVpZ2h0KQoJCglsb2NhbCBwaXBlX2lkID0gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5jaGVjaygpCglsb2NhbCByZXN1bHQsIGNvdW50ID0gYWFiYi5xdWVyeV9pZChjb2xsaXNpb25fZ3JvdXBfaWQsIGNvbGxpc2lvbi5iaXJkX2lkKQoJcmV0dXJuIHJlc3VsdCwgY291bnQKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uc3RvcCgpCglhYWJiLnJ1bihmYWxzZSkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24ucmVzZXQoKQoJYWFiYi5jbGVhcigpCgljb2xsaXNpb25fZ3JvdXBfaWQgPSAtMQoJY29sbGlzaW9uLmJpcmRfaWQgPSAtMQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCmVuZAoKcmV0dXJuIGNvbGxpc2lvbgo",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5AgAAAAAAAHkCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAeQIAAAAAAAB5AgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					103,
@@ -365,7 +549,7 @@
 					"cut",
 					null,
 					"AQAAAHkCAAAAAAAAeQIAAAAAAAAQAAAAbG9jYWwgcGlwZV9pZCA9IA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5AgAAAAAAAIkCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAeQIAAAAAAACJAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					105,
@@ -395,7 +579,7 @@
 						"required_view_version": null
 					},
 					"AQAAAAAAAAAAAAAA3QMAAAAAAADdAwAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglhYWJiLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGFhYmIubmV3X2dyb3VwKCkKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSBhYWJiLmluc2VydChjb2xsaXNpb25fZ3JvdXBfaWQsIDAsIC0xNDQsIHV0aWxzLnpvb20udywgMzIpCmVuZAoKbG9jYWwgZnVuY3Rpb24gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQoJbG9jYWwgbXNnX3VybCA9IG1zZy51cmwodXJsKQoJcmV0dXJuIGFhYmIuaW5zZXJ0X2dhbWVvYmplY3QoY29sbGlzaW9uX2dyb3VwX2lkLCBtc2dfdXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfYmlyZCh1cmwsIHdpZHRoLCBoZWlnaHQpCgljb2xsaXNpb24uYmlyZF9pZCA9IGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX3BpcGUodXJsLCB3aWR0aCwgaGVpZ2h0KQoJYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5jaGVjaygpCglsb2NhbCByZXN1bHQsIGNvdW50ID0gYWFiYi5xdWVyeV9pZChjb2xsaXNpb25fZ3JvdXBfaWQsIGNvbGxpc2lvbi5iaXJkX2lkKQoJcmV0dXJuIHJlc3VsdCwgY291bnQKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uc3RvcCgpCglhYWJiLnJ1bihmYWxzZSkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24ucmVzZXQoKQoJYWFiYi5jbGVhcigpCgljb2xsaXNpb25fZ3JvdXBfaWQgPSAtMQoJY29sbGlzaW9uLmJpcmRfaWQgPSAtMQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCmVuZAoKcmV0dXJuIGNvbGxpc2lvbgo",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5AgAAAAAAAHkCAAAAAAAAAAAAAAAA8L8"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAeQIAAAAAAAB5AgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					109,
@@ -425,54 +609,396 @@
 						"required_view_version": null
 					},
 					"AQAAAAAAAAAAAAAA3QMAAAAAAADdAwAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglhYWJiLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGFhYmIubmV3X2dyb3VwKCkKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSBhYWJiLmluc2VydChjb2xsaXNpb25fZ3JvdXBfaWQsIDAsIC0xNDQsIHV0aWxzLnpvb20udywgMzIpCmVuZAoKbG9jYWwgZnVuY3Rpb24gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQoJbG9jYWwgbXNnX3VybCA9IG1zZy51cmwodXJsKQoJcmV0dXJuIGFhYmIuaW5zZXJ0X2dhbWVvYmplY3QoY29sbGlzaW9uX2dyb3VwX2lkLCBtc2dfdXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfYmlyZCh1cmwsIHdpZHRoLCBoZWlnaHQpCgljb2xsaXNpb24uYmlyZF9pZCA9IGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX3BpcGUodXJsLCB3aWR0aCwgaGVpZ2h0KQoJYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5jaGVjaygpCglsb2NhbCByZXN1bHQsIGNvdW50ID0gYWFiYi5xdWVyeV9pZChjb2xsaXNpb25fZ3JvdXBfaWQsIGNvbGxpc2lvbi5iaXJkX2lkKQoJcmV0dXJuIHJlc3VsdCwgY291bnQKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uc3RvcCgpCglhYWJiLnJ1bihmYWxzZSkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24ucmVzZXQoKQoJYWFiYi5jbGVhcigpCgljb2xsaXNpb25fZ3JvdXBfaWQgPSAtMQoJY29sbGlzaW9uLmJpcmRfaWQgPSAtMQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCmVuZAoKcmV0dXJuIGNvbGxpc2lvbgo",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACbAgAAAAAAAJsCAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "main/scripts/birdy.lua",
-			"settings":
-			{
-				"buffer_size": 2670,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 145,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					4,
-					1,
-					"insert",
-					{
-						"characters": "*"
-					},
-					"AQAAAGwAAAAAAAAAbQAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAbAAAAAAAAABsAAAAAAAAAAAAAAAAAPC/"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAmwIAAAAAAACbAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					7,
+					5,
+					1,
+					"",
+					null,
+					"BwAAAG8DAAAAAAAAdwMAAAAAAAAFAAAAYWFiYi4+AwAAAAAAAEYDAAAAAAAABQAAAGFhYmIu0wIAAAAAAADbAgAAAAAAAAUAAABhYWJiLpMBAAAAAAAAmwEAAAAAAAAFAAAAYWFiYi77AAAAAAAAAAMBAAAAAAAABQAAAGFhYmIu0wAAAAAAAADbAAAAAAAAAAUAAABhYWJiLq0AAAAAAAAAtQAAAAAAAAAFAAAAYWFiYi4",
+					"AQAAAAAAAAABAAAA0wAAAAAAAADYAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"paste",
+					null,
+					"AQAAAOgAAAAAAAAA7wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6AAAAAAAAADoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
 					1,
 					"insert",
 					{
-						"characters": "*"
+						"characters": "."
 					},
-					"AQAAAH4AAAAAAAAAfwAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAfgAAAAAAAAB+AAAAAAAAAAAAAAAAAPC/"
+					"AQAAAO8AAAAAAAAA8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7wAAAAAAAADvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAPAAAAAAAAAA8QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8AAAAAAAAADwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					2,
+					"left_delete",
+					null,
+					"AgAAAPAAAAAAAAAA8AAAAAAAAAABAAAALe8AAAAAAAAA7wAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAA8QAAAAAAAADxAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"cut",
+					null,
+					"AQAAAOgAAAAAAAAA6AAAAAAAAAAHAAAAZGFhYmJjYw",
+					"AQAAAAAAAAABAAAA6AAAAAAAAADvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local utils = require('main.scripts.utils')\n\nlocal collision = {}\n\nlocal collision_group_id = -1\ncollision.bird_id = -1\ncollision.ground_id = -1\n\nfunction collision.init()\n\tdaabbcc.run(true)\n\tcollision_group_id  = daabbcc.new_group()\n\tcollision.ground_id = daabbcc.insert(collision_group_id, 0, -144, utils.zoom.w, 32)\nend\n\nlocal function add_gameobject(url, width, height)\n\tlocal msg_url = msg.url(url)\n\treturn daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)\nend\n\nfunction collision.add_bird(url, width, height)\n\tcollision.bird_id = add_gameobject(url, width, height)\nend\n\nfunction collision.add_pipe(url, width, height)\n\tadd_gameobject(url, width, height)\nend\n\nfunction collision.check()\n\tlocal result, count = daabbcc.query_id(collision_group_id, collision.bird_id)\n\treturn result, count\nend\n\nfunction collision.stop()\n\tdaabbcc.run(false)\nend\n\nfunction collision.reset()\n\tdaabbcc.clear()\n\tcollision_group_id = -1\n\tcollision.bird_id = -1\n\tcollision.ground_id = -1\nend\n\nreturn collision\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 44
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAA8gMAAAAAAADyAwAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglkYWFiYmNjLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGRhYWJiY2MubmV3X2dyb3VwKCkKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSBkYWFiYmNjLmluc2VydChjb2xsaXNpb25fZ3JvdXBfaWQsIDAsIC0xNDQsIHV0aWxzLnpvb20udywgMzIpCmVuZAoKbG9jYWwgZnVuY3Rpb24gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQoJbG9jYWwgbXNnX3VybCA9IG1zZy51cmwodXJsKQoJcmV0dXJuIGRhYWJiY2MuaW5zZXJ0X2dhbWVvYmplY3QoY29sbGlzaW9uX2dyb3VwX2lkLCBtc2dfdXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfYmlyZCh1cmwsIHdpZHRoLCBoZWlnaHQpCgljb2xsaXNpb24uYmlyZF9pZCA9IGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX3BpcGUodXJsLCB3aWR0aCwgaGVpZ2h0KQoJYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5jaGVjaygpCglsb2NhbCByZXN1bHQsIGNvdW50ID0gZGFhYmJjYy5xdWVyeV9pZChjb2xsaXNpb25fZ3JvdXBfaWQsIGNvbGxpc2lvbi5iaXJkX2lkKQoJcmV0dXJuIHJlc3VsdCwgY291bnQKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uc3RvcCgpCglkYWFiYmNjLnJ1bihmYWxzZSkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24ucmVzZXQoKQoJZGFhYmJjYy5jbGVhcigpCgljb2xsaXNpb25fZ3JvdXBfaWQgPSAtMQoJY29sbGlzaW9uLmJpcmRfaWQgPSAtMQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCmVuZAoKcmV0dXJuIGNvbGxpc2lvbgo",
+					"AQAAAAAAAAABAAAA6AAAAAAAAADoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": "d"
+					},
+					"AQAAAOgAAAAAAAAA6QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6AAAAAAAAADoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":5,\"session_name\":\"LSP-lua\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "daabbcc"
+					},
+					"AgAAAOgAAAAAAAAA6AAAAAAAAAABAAAAZOgAAAAAAAAA7wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6QAAAAAAAADpAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAAO8AAAAAAAAA8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7wAAAAAAAADvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":5,\"session_name\":\"LSP-lua\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": true,
+						"trigger": "UPDATE_PARTIALREBUILD"
+					},
+					"AQAAAPAAAAAAAAAABQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8AAAAAAAAADwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local utils = require('main.scripts.utils')\n\nlocal collision = {}\n\nlocal collision_group_id = -1\ncollision.bird_id = -1\ncollision.ground_id = -1\n\nfunction collision.init()\n\tdaabbcc.run(true)\n\tcollision_group_id  = daabbcc.new_group(daabbcc.UPDATE_PARTIALREBUILD)\n\tcollision.ground_id = daabbcc.insert(collision_group_id, 0, -144, utils.zoom.w, 32)\nend\n\nlocal function add_gameobject(url, width, height)\n\tlocal msg_url = msg.url(url)\n\treturn daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)\nend\n\nfunction collision.add_bird(url, width, height)\n\tcollision.bird_id = add_gameobject(url, width, height)\nend\n\nfunction collision.add_pipe(url, width, height)\n\tadd_gameobject(url, width, height)\nend\n\nfunction collision.check()\n\tlocal result, count = daabbcc.query_id(collision_group_id, collision.bird_id)\n\treturn result, count\nend\n\nfunction collision.stop()\n\tdaabbcc.run(false)\nend\n\nfunction collision.reset()\n\tdaabbcc.clear()\n\tcollision_group_id = -1\n\tcollision.bird_id = -1\n\tcollision.ground_id = -1\nend\n\nreturn collision\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 44
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAADwQAAAAAAAAPBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglkYWFiYmNjLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGRhYWJiY2MubmV3X2dyb3VwKGRhYWJiY2MuVVBEQVRFX1BBUlRJQUxSRUJVSUxEKQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IGRhYWJiY2MuaW5zZXJ0KGNvbGxpc2lvbl9ncm91cF9pZCwgMCwgLTE0NCwgdXRpbHMuem9vbS53LCAzMikKZW5kCgpsb2NhbCBmdW5jdGlvbiBhZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCglsb2NhbCBtc2dfdXJsID0gbXNnLnVybCh1cmwpCglyZXR1cm4gZGFhYmJjYy5pbnNlcnRfZ2FtZW9iamVjdChjb2xsaXNpb25fZ3JvdXBfaWQsIG1zZ191cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmFkZF9iaXJkKHVybCwgd2lkdGgsIGhlaWdodCkKCWNvbGxpc2lvbi5iaXJkX2lkID0gYWRkX2dhbWVvYmplY3QodXJsLCB3aWR0aCwgaGVpZ2h0KQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5hZGRfcGlwZSh1cmwsIHdpZHRoLCBoZWlnaHQpCglhZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmNoZWNrKCkKCWxvY2FsIHJlc3VsdCwgY291bnQgPSBkYWFiYmNjLnF1ZXJ5X2lkKGNvbGxpc2lvbl9ncm91cF9pZCwgY29sbGlzaW9uLmJpcmRfaWQpCglyZXR1cm4gcmVzdWx0LCBjb3VudAplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5zdG9wKCkKCWRhYWJiY2MucnVuKGZhbHNlKQplbmQKCmZ1bmN0aW9uIGNvbGxpc2lvbi5yZXNldCgpCglkYWFiYmNjLmNsZWFyKCkKCWNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCgljb2xsaXNpb24uYmlyZF9pZCA9IC0xCgljb2xsaXNpb24uZ3JvdW5kX2lkID0gLTEKZW5kCgpyZXR1cm4gY29sbGlzaW9uCg",
+					"AQAAAAAAAAABAAAABQEAAAAAAAAFAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					42,
+					1,
+					"insert",
+					{
+						"characters": "_aa"
+					},
+					"AwAAACwBAAAAAAAALQEAAAAAAAAAAAAALQEAAAAAAAAuAQAAAAAAAAAAAAAuAQAAAAAAAC8BAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALAEAAAAAAAAsAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":0,\"session_name\":\"LSP-lua\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "insert_aabb(group_id, x, y, width, height, mask_bits)"
+					},
+					"AgAAACYBAAAAAAAAJgEAAAAAAAAJAAAAaW5zZXJ0X2FhJgEAAAAAAAAxAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALwEAAAAAAAAvAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local utils = require('main.scripts.utils')\n\nlocal collision = {}\n\nlocal collision_group_id = -1\ncollision.bird_id = -1\ncollision.ground_id = -1\n\nfunction collision.init()\n\tdaabbcc.run(true)\n\tcollision_group_id  = daabbcc.new_group(daabbcc.UPDATE_PARTIALREBUILD)\n\tcollision.ground_id = daabbcc.insert_aabb(collision_group_id, 0, -144, utils.zoom.w, 32)\nend\n\nlocal function add_gameobject(url, width, height)\n\tlocal msg_url = msg.url(url)\n\treturn daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)\nend\n\nfunction collision.add_bird(url, width, height)\n\tcollision.bird_id = add_gameobject(url, width, height)\nend\n\nfunction collision.add_pipe(url, width, height)\n\tadd_gameobject(url, width, height)\nend\n\nfunction collision.check()\n\tlocal result, count = daabbcc.query_id(collision_group_id, collision.bird_id)\n\treturn result, count\nend\n\nfunction collision.stop()\n\tdaabbcc.run(false)\nend\n\nfunction collision.reset()\n\tdaabbcc.clear()\n\tcollision_group_id = -1\n\tcollision.bird_id = -1\n\tcollision.ground_id = -1\nend\n\nreturn collision\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 44
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAFAQAAAAAAAAUBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglkYWFiYmNjLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGRhYWJiY2MubmV3X2dyb3VwKGRhYWJiY2MuVVBEQVRFX1BBUlRJQUxSRUJVSUxEKQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IGRhYWJiY2MuaW5zZXJ0X2FhYmIoY29sbGlzaW9uX2dyb3VwX2lkLCAwLCAtMTQ0LCB1dGlscy56b29tLncsIDMyKQplbmQKCmxvY2FsIGZ1bmN0aW9uIGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKCWxvY2FsIG1zZ191cmwgPSBtc2cudXJsKHVybCkKCXJldHVybiBkYWFiYmNjLmluc2VydF9nYW1lb2JqZWN0KGNvbGxpc2lvbl9ncm91cF9pZCwgbXNnX3VybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX2JpcmQodXJsLCB3aWR0aCwgaGVpZ2h0KQoJY29sbGlzaW9uLmJpcmRfaWQgPSBhZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmFkZF9waXBlKHVybCwgd2lkdGgsIGhlaWdodCkKCWFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uY2hlY2soKQoJbG9jYWwgcmVzdWx0LCBjb3VudCA9IGRhYWJiY2MucXVlcnlfaWQoY29sbGlzaW9uX2dyb3VwX2lkLCBjb2xsaXNpb24uYmlyZF9pZCkKCXJldHVybiByZXN1bHQsIGNvdW50CmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnN0b3AoKQoJZGFhYmJjYy5ydW4oZmFsc2UpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnJlc2V0KCkKCWRhYWJiY2MuY2xlYXIoKQoJY29sbGlzaW9uX2dyb3VwX2lkID0gLTEKCWNvbGxpc2lvbi5iaXJkX2lkID0gLTEKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSAtMQplbmQKCnJldHVybiBjb2xsaXNpb24K",
+					"AQAAAAAAAAABAAAAdQIAAAAAAAB1AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"insert",
+					{
+						"characters": "rese"
+					},
+					"BQAAAKsDAAAAAAAArAMAAAAAAAAAAAAArAMAAAAAAACsAwAAAAAAAAUAAABjbGVhcqwDAAAAAAAArQMAAAAAAAAAAAAArQMAAAAAAACuAwAAAAAAAAAAAACuAwAAAAAAAK8DAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqwMAAAAAAACwAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":4,\"session_name\":\"LSP-lua\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "reset()"
+					},
+					"AgAAAKsDAAAAAAAAqwMAAAAAAAAEAAAAcmVzZasDAAAAAAAAsAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArwMAAAAAAACvAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local utils = require('main.scripts.utils')\n\nlocal collision = {}\n\nlocal collision_group_id = -1\ncollision.bird_id = -1\ncollision.ground_id = -1\n\nfunction collision.init()\n\tdaabbcc.run(true)\n\tcollision_group_id  = daabbcc.new_group(daabbcc.UPDATE_PARTIALREBUILD)\n\tcollision.ground_id = daabbcc.insert_aabb(collision_group_id, 0, -144, utils.zoom.w, 32)\nend\n\nlocal function add_gameobject(url, width, height)\n\tlocal msg_url = msg.url(url)\n\treturn daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)\nend\n\nfunction collision.add_bird(url, width, height)\n\tcollision.bird_id = add_gameobject(url, width, height)\nend\n\nfunction collision.add_pipe(url, width, height)\n\tadd_gameobject(url, width, height)\nend\n\nfunction collision.check()\n\tlocal result, count = daabbcc.query_id(collision_group_id, collision.bird_id)\n\treturn result, count\nend\n\nfunction collision.stop()\n\tdaabbcc.run(false)\nend\n\nfunction collision.reset()\n\tdaabbcc.reset()\n\tcollision_group_id = -1\n\tcollision.bird_id = -1\n\tcollision.ground_id = -1\nend\n\nreturn collision\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 44
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAFAQAAAAAAAAUBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglkYWFiYmNjLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGRhYWJiY2MubmV3X2dyb3VwKGRhYWJiY2MuVVBEQVRFX1BBUlRJQUxSRUJVSUxEKQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IGRhYWJiY2MuaW5zZXJ0X2FhYmIoY29sbGlzaW9uX2dyb3VwX2lkLCAwLCAtMTQ0LCB1dGlscy56b29tLncsIDMyKQplbmQKCmxvY2FsIGZ1bmN0aW9uIGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKCWxvY2FsIG1zZ191cmwgPSBtc2cudXJsKHVybCkKCXJldHVybiBkYWFiYmNjLmluc2VydF9nYW1lb2JqZWN0KGNvbGxpc2lvbl9ncm91cF9pZCwgbXNnX3VybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX2JpcmQodXJsLCB3aWR0aCwgaGVpZ2h0KQoJY29sbGlzaW9uLmJpcmRfaWQgPSBhZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmFkZF9waXBlKHVybCwgd2lkdGgsIGhlaWdodCkKCWFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uY2hlY2soKQoJbG9jYWwgcmVzdWx0LCBjb3VudCA9IGRhYWJiY2MucXVlcnlfaWQoY29sbGlzaW9uX2dyb3VwX2lkLCBjb2xsaXNpb24uYmlyZF9pZCkKCXJldHVybiByZXN1bHQsIGNvdW50CmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnN0b3AoKQoJZGFhYmJjYy5ydW4oZmFsc2UpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnJlc2V0KCkKCWRhYWJiY2MucmVzZXQoKQoJY29sbGlzaW9uX2dyb3VwX2lkID0gLTEKCWNvbGxpc2lvbi5iaXJkX2lkID0gLTEKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSAtMQplbmQKCnJldHVybiBjb2xsaXNpb24K",
+					"AQAAAAAAAAABAAAAsgMAAAAAAACyAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					96,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local utils = require('main.scripts.utils')\n\nlocal collision = {}\n\nlocal collision_group_id = -1\ncollision.bird_id = -1\ncollision.ground_id = -1\n\nfunction collision.init()\n\tdaabbcc.run(true)\n\tcollision_group_id  = daabbcc.new_group(daabbcc.UPDATE_PARTIALREBUILD)\n\tcollision.ground_id = daabbcc.insert_aabb(collision_group_id, 0, -144, utils.zoom.w, 32)\nend\n\nlocal function add_gameobject(url, width, height)\n\tlocal msg_url = msg.url(url)\n\treturn daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)\nend\n\nfunction collision.add_bird(url, width, height)\n\tcollision.bird_id = add_gameobject(url, width, height)\nend\n\nfunction collision.add_pipe(url, width, height)\n\tadd_gameobject(url, width, height)\nend\n\nfunction collision.check()\n\tlocal result, count = daabbcc.query_id(collision_group_id, collision.bird_id)\n\treturn result, count\nend\n\nfunction collision.stop()\n\tdaabbcc.run(false)\nend\n\nfunction collision.reset()\n\tdaabbcc.reset()\n\tcollision_group_id = -1\n\tcollision.bird_id = -1\n\tcollision.ground_id = -1\nend\n\nreturn collision\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 44
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAFAQAAAAAAAAUBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglkYWFiYmNjLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGRhYWJiY2MubmV3X2dyb3VwKGRhYWJiY2MuVVBEQVRFX1BBUlRJQUxSRUJVSUxEKQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IGRhYWJiY2MuaW5zZXJ0X2FhYmIoY29sbGlzaW9uX2dyb3VwX2lkLCAwLCAtMTQ0LCB1dGlscy56b29tLncsIDMyKQplbmQKCmxvY2FsIGZ1bmN0aW9uIGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKCWxvY2FsIG1zZ191cmwgPSBtc2cudXJsKHVybCkKCXJldHVybiBkYWFiYmNjLmluc2VydF9nYW1lb2JqZWN0KGNvbGxpc2lvbl9ncm91cF9pZCwgbXNnX3VybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX2JpcmQodXJsLCB3aWR0aCwgaGVpZ2h0KQoJY29sbGlzaW9uLmJpcmRfaWQgPSBhZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmFkZF9waXBlKHVybCwgd2lkdGgsIGhlaWdodCkKCWFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uY2hlY2soKQoJbG9jYWwgcmVzdWx0LCBjb3VudCA9IGRhYWJiY2MucXVlcnlfaWQoY29sbGlzaW9uX2dyb3VwX2lkLCBjb2xsaXNpb24uYmlyZF9pZCkKCXJldHVybiByZXN1bHQsIGNvdW50CmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnN0b3AoKQoJZGFhYmJjYy5ydW4oZmFsc2UpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnJlc2V0KCkKCWRhYWJiY2MucmVzZXQoKQoJY29sbGlzaW9uX2dyb3VwX2lkID0gLTEKCWNvbGxpc2lvbi5iaXJkX2lkID0gLTEKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSAtMQplbmQKCnJldHVybiBjb2xsaXNpb24K",
+					"AQAAAAAAAAABAAAAsgMAAAAAAACyAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					194,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local utils = require('main.scripts.utils')\n\nlocal collision = {}\n\nlocal collision_group_id = -1\ncollision.bird_id = -1\ncollision.ground_id = -1\n\nfunction collision.init()\n\tdaabbcc.run(true)\n\tcollision_group_id  = daabbcc.new_group(daabbcc.UPDATE_PARTIALREBUILD)\n\tcollision.ground_id = daabbcc.insert_aabb(collision_group_id, 0, -144, utils.zoom.w, 32)\nend\n\nlocal function add_gameobject(url, width, height)\n\tlocal msg_url = msg.url(url)\n\treturn daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)\nend\n\nfunction collision.add_bird(url, width, height)\n\tcollision.bird_id = add_gameobject(url, width, height)\nend\n\nfunction collision.add_pipe(url, width, height)\n\tadd_gameobject(url, width, height)\nend\n\nfunction collision.check()\n\tlocal result, count = daabbcc.query_id(collision_group_id, collision.bird_id)\n\treturn result, count\nend\n\nfunction collision.stop()\n\tdaabbcc.run(false)\nend\n\nfunction collision.reset()\n\tdaabbcc.reset()\n\tcollision_group_id = -1\n\tcollision.bird_id = -1\n\tcollision.ground_id = -1\nend\n\nreturn collision\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 44
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAFAQAAAAAAAAUBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglkYWFiYmNjLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGRhYWJiY2MubmV3X2dyb3VwKGRhYWJiY2MuVVBEQVRFX1BBUlRJQUxSRUJVSUxEKQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IGRhYWJiY2MuaW5zZXJ0X2FhYmIoY29sbGlzaW9uX2dyb3VwX2lkLCAwLCAtMTQ0LCB1dGlscy56b29tLncsIDMyKQplbmQKCmxvY2FsIGZ1bmN0aW9uIGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKCWxvY2FsIG1zZ191cmwgPSBtc2cudXJsKHVybCkKCXJldHVybiBkYWFiYmNjLmluc2VydF9nYW1lb2JqZWN0KGNvbGxpc2lvbl9ncm91cF9pZCwgbXNnX3VybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX2JpcmQodXJsLCB3aWR0aCwgaGVpZ2h0KQoJY29sbGlzaW9uLmJpcmRfaWQgPSBhZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmFkZF9waXBlKHVybCwgd2lkdGgsIGhlaWdodCkKCWFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uY2hlY2soKQoJbG9jYWwgcmVzdWx0LCBjb3VudCA9IGRhYWJiY2MucXVlcnlfaWQoY29sbGlzaW9uX2dyb3VwX2lkLCBjb2xsaXNpb24uYmlyZF9pZCkKCXJldHVybiByZXN1bHQsIGNvdW50CmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnN0b3AoKQoJZGFhYmJjYy5ydW4oZmFsc2UpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnJlc2V0KCkKCWRhYWJiY2MucmVzZXQoKQoJY29sbGlzaW9uX2dyb3VwX2lkID0gLTEKCWNvbGxpc2lvbi5iaXJkX2lkID0gLTEKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSAtMQplbmQKCnJldHVybiBjb2xsaXNpb24K",
+					"AQAAAAAAAAABAAAATwEAAAAAAABbAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					204,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "local utils = require('main.scripts.utils')\n\nlocal collision = {}\n\nlocal collision_group_id = -1\ncollision.bird_id = -1\ncollision.ground_id = -1\n\nfunction collision.init()\n\tdaabbcc.run(true)\n\tcollision_group_id  = daabbcc.new_group(daabbcc.UPDATE_PARTIALREBUILD)\n\tcollision.ground_id = daabbcc.insert_aabb(collision_group_id, 0, -144, utils.zoom.w, 32)\nend\n\nlocal function add_gameobject(url, width, height)\n\tlocal msg_url = msg.url(url)\n\treturn daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)\nend\n\nfunction collision.add_bird(url, width, height)\n\tcollision.bird_id = add_gameobject(url, width, height)\nend\n\nfunction collision.add_pipe(url, width, height)\n\tadd_gameobject(url, width, height)\nend\n\nfunction collision.check()\n\tlocal result, count = daabbcc.query_id(collision_group_id, collision.bird_id)\n\treturn result, count\nend\n\nfunction collision.stop()\n\tdaabbcc.run(false)\nend\n\nfunction collision.reset()\n\tdaabbcc.reset()\n\tcollision_group_id = -1\n\tcollision.bird_id = -1\n\tcollision.ground_id = -1\nend\n\nreturn collision\n",
+								"range":
+								{
+									"end":
+									{
+										"character": 0,
+										"line": 44
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAFAQAAAAAAAAUBAAAbG9jYWwgdXRpbHMgPSByZXF1aXJlKCdtYWluLnNjcmlwdHMudXRpbHMnKQoKbG9jYWwgY29sbGlzaW9uID0ge30KCmxvY2FsIGNvbGxpc2lvbl9ncm91cF9pZCA9IC0xCmNvbGxpc2lvbi5iaXJkX2lkID0gLTEKY29sbGlzaW9uLmdyb3VuZF9pZCA9IC0xCgpmdW5jdGlvbiBjb2xsaXNpb24uaW5pdCgpCglkYWFiYmNjLnJ1bih0cnVlKQoJY29sbGlzaW9uX2dyb3VwX2lkICA9IGRhYWJiY2MubmV3X2dyb3VwKGRhYWJiY2MuVVBEQVRFX1BBUlRJQUxSRUJVSUxEKQoJY29sbGlzaW9uLmdyb3VuZF9pZCA9IGRhYWJiY2MuaW5zZXJ0X2FhYmIoY29sbGlzaW9uX2dyb3VwX2lkLCAwLCAtMTQ0LCB1dGlscy56b29tLncsIDMyKQplbmQKCmxvY2FsIGZ1bmN0aW9uIGFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKCWxvY2FsIG1zZ191cmwgPSBtc2cudXJsKHVybCkKCXJldHVybiBkYWFiYmNjLmluc2VydF9nYW1lb2JqZWN0KGNvbGxpc2lvbl9ncm91cF9pZCwgbXNnX3VybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uYWRkX2JpcmQodXJsLCB3aWR0aCwgaGVpZ2h0KQoJY29sbGlzaW9uLmJpcmRfaWQgPSBhZGRfZ2FtZW9iamVjdCh1cmwsIHdpZHRoLCBoZWlnaHQpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLmFkZF9waXBlKHVybCwgd2lkdGgsIGhlaWdodCkKCWFkZF9nYW1lb2JqZWN0KHVybCwgd2lkdGgsIGhlaWdodCkKZW5kCgpmdW5jdGlvbiBjb2xsaXNpb24uY2hlY2soKQoJbG9jYWwgcmVzdWx0LCBjb3VudCA9IGRhYWJiY2MucXVlcnlfaWQoY29sbGlzaW9uX2dyb3VwX2lkLCBjb2xsaXNpb24uYmlyZF9pZCkKCXJldHVybiByZXN1bHQsIGNvdW50CmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnN0b3AoKQoJZGFhYmJjYy5ydW4oZmFsc2UpCmVuZAoKZnVuY3Rpb24gY29sbGlzaW9uLnJlc2V0KCkKCWRhYWJiY2MucmVzZXQoKQoJY29sbGlzaW9uX2dyb3VwX2lkID0gLTEKCWNvbGxpc2lvbi5iaXJkX2lkID0gLTEKCWNvbGxpc2lvbi5ncm91bmRfaWQgPSAtMQplbmQKCnJldHVybiBjb2xsaXNpb24K",
+					"AQAAAAAAAAABAAAAYAEAAAAAAABgAQAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/User/Defold-Build.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/Lua/Lua.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua/Lua.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/C++ Build and Run.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Defold-Build.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/Defold-Build.sublime-build",
+				""
+			]
+		]
 	],
 	"build_varint": "",
 	"command_palette":
@@ -596,12 +1122,17 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/selimanac/Development/defold/flappybird",
-		"/Users/selimanac/Development/defold/flappybird/main",
-		"/Users/selimanac/Development/defold/flappybird/main/scripts"
+		"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird",
+		"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/main",
+		"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/main/scripts"
 	],
 	"file_history":
 	[
+		"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/.gitignore",
+		"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/main/scripts/birdy.lua",
+		"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/annotation.lua",
+		"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/main/scripts/utils.lua",
+		"/var/folders/qr/lx1x7h85201_jnjx7335y9jh0000gn/T/extract-13487093486050757481/orthographic/camera.lua",
 		"/Users/selimanac/Development/defold/flappybird/main/scripts/main.script",
 		"/Users/selimanac/Development/defold/flappybird/main/scripts/birdy.lua",
 		"/Users/selimanac/Development/defold/flappybird/main/scripts/utils.lua",
@@ -691,13 +1222,14 @@
 	],
 	"find":
 	{
-		"height": 45.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 106.0,
+		"height": 122.0,
 		"where_history":
 		[
+			"/Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/main,<project filters>"
 		]
 	},
 	"find_state":
@@ -705,6 +1237,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"zoom",
+			"camera",
+			"aabb."
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -712,6 +1247,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"daabbcc."
 		],
 		"reverse": false,
 		"scrollbar_highlights": true,
@@ -732,135 +1268,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 474,
+						"buffer_size": 521,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								474,
-								474
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"lsp_active": true,
-							"lsp_uri": "file:///Users/selimanac/Development/defold/flappybird/main/scripts/main.script",
-							"show_definitions": false,
-							"show_line_column": "disabled",
-							"syntax": "Packages/Lua/Lua.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "main/scripts/collision.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 989,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								667,
-								667
+								70,
+								159
 							]
 						],
 						"settings":
@@ -883,8 +1299,8 @@
 								{
 									"1":
 									[
-										666,
-										667
+										158,
+										159
 									]
 								},
 								"icon":
@@ -899,8 +1315,8 @@
 								{
 									"1":
 									[
-										647,
-										648
+										78,
+										79
 									]
 								},
 								"unmatched":
@@ -909,41 +1325,46 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -958,15 +1379,10 @@
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_tag_content"
 							],
 							"lsp_active": true,
-							"lsp_uri": "file:///Users/selimanac/Development/defold/flappybird/main/scripts/collision.lua",
+							"lsp_uri": "file:///Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/main/scripts/main.script",
 							"show_definitions": false,
 							"show_line_column": "disabled",
 							"syntax": "Packages/Lua/Lua.sublime-syntax",
@@ -976,25 +1392,26 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "main/scripts/birdy.lua",
+					"buffer": 1,
+					"file": "main/scripts/collision.lua",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2670,
+						"buffer_size": 1044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1116,
-								1116
+								629,
+								629
 							]
 						],
 						"settings":
@@ -1015,27 +1432,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										1398,
-										1401
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/dot.png",
-										"region.yellowish brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										1102,
-										1104
-									]
 								},
 								"unmatched":
 								{
@@ -1043,41 +1445,46 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1092,125 +1499,14 @@
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_tag_content"
 							],
 							"lsp_active": true,
-							"lsp_uri": "file:///Users/selimanac/Development/defold/flappybird/main/scripts/birdy.lua",
+							"lsp_uri": "file:///Users/selimanac/Development/defold/EXTENSIONS/defold-daabbcc-examples/flappybird/main/scripts/collision.lua",
 							"show_definitions": false,
-							"syntax": "Packages/Lua/Lua.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": ".gitignore",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 145,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								127,
-								127
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"lsp_uri": "file:///Users/selimanac/Development/defold/flappybird/.gitignore",
 							"show_line_column": "disabled",
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1225,7 +1521,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 33.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -1282,7 +1578,7 @@
 	"project": "flappy.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 84.0
 	},
 	"save_all_on_build": true,
 	"select_file":

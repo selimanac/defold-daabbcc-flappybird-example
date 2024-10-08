@@ -7,14 +7,14 @@ collision.bird_id = -1
 collision.ground_id = -1
 
 function collision.init()
-	aabb.run(true)
-	collision_group_id  = aabb.new_group()
-	collision.ground_id = aabb.insert(collision_group_id, 0, -144, utils.zoom.w, 32)
+	daabbcc.run(true)
+	collision_group_id  = daabbcc.new_group()
+	collision.ground_id = daabbcc.insert_aabb(collision_group_id, 0, -144, utils.zoom.w, 32)
 end
 
 local function add_gameobject(url, width, height)
 	local msg_url = msg.url(url)
-	return aabb.insert_gameobject(collision_group_id, msg_url, width, height)
+	return daabbcc.insert_gameobject(collision_group_id, msg_url, width, height)
 end
 
 function collision.add_bird(url, width, height)
@@ -26,16 +26,16 @@ function collision.add_pipe(url, width, height)
 end
 
 function collision.check()
-	local result, count = aabb.query_id(collision_group_id, collision.bird_id)
+	local result, count = daabbcc.query_id(collision_group_id, collision.bird_id)
 	return result, count
 end
 
 function collision.stop()
-	aabb.run(false)
+	daabbcc.run(false)
 end
 
 function collision.reset()
-	aabb.clear()
+	daabbcc.reset()
 	collision_group_id = -1
 	collision.bird_id = -1
 	collision.ground_id = -1

@@ -10,3 +10,4 @@ Thumbs.db
 builtins
 *.sublime-project
 *.sublime-workspace
+annotation.lua

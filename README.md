@@ -1,6 +1,6 @@
 # DAABBCC Flappy Bird Example
 
-Flappy Bird example using [DAABBCC](https://github.com/selimanac/DAABBCC).   
+Flappy Bird example using [DAABBCC](https://github.com/selimanac/defold-daabbcc).   
 
 
 Play it here: https://selimanac.github.io/DAABBCC-Flappybird-Example/
